@@ -5,13 +5,13 @@ import Footer from '@/components/Footer';
 
 /**
  * Home Page - Terminal Link-in-Bio
- * 
+ *
  * Main page displaying:
  * - Terminal header with typing animation
  * - Status card with system information
  * - Command list with interactive links
  * - Footer with attribution
- * 
+ *
  * Design Philosophy: Terminal/CLI interface for IF - Técnico em Informática
  */
 export default function Home() {
@@ -21,8 +21,25 @@ export default function Home() {
     '> status: online'
   ];
 
+  function getDailyPhrase() {
+    const day = new Date().getDay();
+
+    const phrases: Record<number, string> = {
+      0: 'domingo de deploy mental 🧠',        // Sunday
+      1: 'segunda, coragem ativada ⚡',        // Monday
+      2: 'terça no modo foco 🎯',              // Tuesday
+      3: 'quarta, meio do caminho 🧭',         // Wednesday
+      4: 'quinta produtiva 🚀',                // Thursday
+      5: 'sexta em ritmo de commit final 🔥',  // Friday
+      6: 'sábado, código opcional 😴'          // Saturday
+    };
+
+
+    return phrases[day];
+  }
+
   const statusItems = [
-    { label: 'cafezinho recomendado', value: '☕', isHighlight: false },
+    { label: getDailyPhrase(), value: '☕', isHighlight: false },
     { label: 'última atualização', value: 'hoje', isHighlight: true },
     { label: 'deploy concluído com sucesso', value: '✅', isHighlight: false }
   ];
@@ -30,38 +47,38 @@ export default function Home() {
   const commands = [
     {
       number: 1,
-      icon: '📚',
-      title: 'Class Materials',
-      description: 'acessar conteúdos',
-      href: '#'
+      icon: '📸',
+      title: 'Oficial Instagram',
+      description: 'seguir @infoxii',
+      href: 'https://www.instagram.com/infoxii/'
     },
     {
       number: 2,
-      icon: '📸',
-      title: 'Official Instagram',
-      description: 'seguir @if_informatica',
-      href: '#'
+      icon: '👥',
+      title: 'Grupo Calourada',
+      description: 'entrar no grupo',
+      href: 'https://chat.whatsapp.com/GRIFugENSOe3xKOMs6oqj2'
     },
     {
       number: 3,
-      icon: '🧑‍💻',
-      title: 'Student Projects',
-      description: 'ver projetos da turma',
+      icon: '🏀',
+      title: 'JM',
+      description: 'vice representante',
       href: '#'
     },
     {
       number: 4,
-      icon: '🗓️',
-      title: 'Important Dates',
-      description: 'calendário e prazos',
-      href: '#'
+      icon: '🧑🏿‍💼',
+      title: 'Brenno',
+      description: 'nosso querido representante',
+      href: 'https://w.app/bj8m7w'
     },
     {
       number: 5,
-      icon: '☕',
-      title: 'Memes & Backstage',
-      description: 'porque programar é arte',
-      href: '#'
+      icon: '👱🏼‍♀️',
+      title: 'Manu',
+      description: 'responsável da sala',
+      href: 'https://w.app/bj8m7w'
     }
   ];
 
