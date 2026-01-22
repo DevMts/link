@@ -61,18 +61,19 @@ export default function Home() {
     },
     {
       number: 3,
-      icon: '🏀',
-      title: 'JM',
-      description: 'vice representante',
-      href: '#'
-    },
-    {
-      number: 4,
       icon: '🧑🏿‍💼',
       title: 'Brenno',
       description: 'nosso querido representante',
       href: 'https://w.app/bj8m7w'
     },
+    {
+      number: 4,
+      icon: '🏀',
+      title: 'JM',
+      description: 'vice representante',
+      href: '#'
+    },
+
     {
       number: 5,
       icon: '👱🏼‍♀️',
@@ -85,7 +86,7 @@ export default function Home() {
   const footerLines = [
     '// IF - Técnico em Informática',
     '// built by students, for students',
-    '© 2024 • feito com ♥ e café'
+    `© ${new Date().getFullYear()} • feito com ♥ e café`
   ];
 
   return (

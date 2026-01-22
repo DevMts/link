@@ -49,7 +49,7 @@ export default function StatusCard({
             key={index}
             className="flex items-center gap-2 text-xs sm:text-sm md:text-base flex-wrap"
           >
-            <span className="text-muted-foreground">// {item.label}:</span>
+            <span className="text-muted-foreground">// {item.label}</span>
 
             {item.isHighlight ? (
               <span className="px-2 py-1 rounded bg-accent text-accent-foreground font-semibold text-xs md:text-sm whitespace-nowrap">

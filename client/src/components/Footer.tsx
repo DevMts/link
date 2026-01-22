@@ -1,12 +1,12 @@
 /**
  * Footer Component
- * 
+ *
  * Displays footer information in terminal comment style:
  * - Multiple comment lines (//)
  * - Light gray text
  * - Centered alignment
  * - Smaller font size
- * 
+ *
  * Design Philosophy: Terminal footer with attribution and copyright
  */
 interface FooterProps {
@@ -17,7 +17,7 @@ export default function Footer({
   lines = [
     '// IF - Técnico em Informática',
     '// built by students, for students',
-    '© 2024 • feito com ♥ e café'
+    `© ${new Date().getFullYear()} • feito com ♥ e café`
   ]
 }: FooterProps) {
   return (
