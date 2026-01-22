@@ -71,7 +71,7 @@ export default function Home() {
       icon: '🏀',
       title: 'JM',
       description: 'vice representante',
-      href: '#'
+      href: 'https://w.app/7zkfbj'
     },
 
     {
@@ -79,7 +79,7 @@ export default function Home() {
       icon: '👱🏼‍♀️',
       title: 'Manu',
       description: 'responsável da sala',
-      href: 'https://w.app/bj8m7w'
+      href: 'https://w.app/emtagp'
     }
   ];
 
