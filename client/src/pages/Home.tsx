@@ -39,7 +39,7 @@ export default function Home() {
   }
 
   const statusItems = [
-    { label: getDailyPhrase(), value: '☕', isHighlight: false },
+    { label: getDailyPhrase(), value: '', isHighlight: false },
     { label: 'última atualização', value: 'hoje', isHighlight: true },
     { label: 'deploy concluído com sucesso', value: '✅', isHighlight: false }
   ];
