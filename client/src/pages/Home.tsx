@@ -76,7 +76,7 @@ export default function Home() {
 
     {
       number: 5,
-      icon: '👱🏼‍♀️',
+      icon: '🪷',
       title: 'Manu',
       description: 'responsável da sala',
       href: 'https://w.app/emtagp'
